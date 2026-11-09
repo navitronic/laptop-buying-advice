@@ -403,6 +403,7 @@ footer p {
 
 .table-wrap {
   overflow-x: auto;
+  margin-bottom: 28px;
 }
 
 table {
