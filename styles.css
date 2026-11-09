@@ -114,6 +114,14 @@ main > section {
   font-weight: 600;
 }
 
+.related-page {
+  margin: 24px 0 0;
+  padding-top: 18px;
+  color: var(--muted);
+  border-top: 1px solid var(--line);
+  font-size: 0.9rem;
+}
+
 .quick-recommendation {
   margin-top: 50px;
   padding: 40px;
