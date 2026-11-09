@@ -97,6 +97,23 @@ main > section {
   font-size: 1.08rem;
 }
 
+.contents {
+  padding-block: 48px;
+  border-bottom: 1px solid var(--line);
+}
+
+.contents ol {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 36px;
+  margin: 0;
+  padding-left: 24px;
+}
+
+.contents a {
+  font-weight: 600;
+}
+
 .disclaimer {
   margin-block: 50px 0;
   padding: 36px 40px;
@@ -403,6 +420,7 @@ th {
     padding: 28px 22px;
   }
 
+  .contents ol,
   .factor,
   .recommendations,
   .link-grid,
