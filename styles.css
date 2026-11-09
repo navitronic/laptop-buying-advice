@@ -114,6 +114,47 @@ main > section {
   font-weight: 600;
 }
 
+.quick-recommendation {
+  margin-top: 50px;
+  padding: 40px;
+  background: var(--surface);
+  border: 2px solid var(--accent);
+}
+
+main > .quick-recommendation {
+  border-bottom: 2px solid var(--accent);
+}
+
+.quick-spec-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 30px;
+  margin-block: 26px;
+  padding-left: 22px;
+}
+
+.quick-note {
+  margin: 0;
+  padding-top: 20px;
+  color: var(--muted);
+  border-top: 1px solid var(--line);
+}
+
+.notice {
+  padding: 26px 28px;
+  background: var(--surface);
+  border-left: 4px solid var(--accent);
+}
+
+.notice p:last-child {
+  margin-bottom: 0;
+}
+
+.warning-notice {
+  background: #fff8df;
+  border-left-color: #a87916;
+}
+
 .disclaimer {
   margin-block: 50px 0;
   padding: 36px 40px;
@@ -176,6 +217,28 @@ main > .disclaimer {
   display: block;
   margin-bottom: 10px;
   line-height: 1.4;
+}
+
+.requirement-badge,
+.advice-badge {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 3px 8px;
+  border-radius: 3px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.requirement-badge {
+  color: #31536d;
+  background: #e2eef6;
+}
+
+.advice-badge {
+  color: var(--accent);
+  background: var(--accent-light);
 }
 
 .recommendations p {
@@ -261,6 +324,12 @@ main > .disclaimer {
 
 .checklist {
   border-bottom: 0;
+}
+
+.checklist-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
 }
 
 .checklist ul {
@@ -392,6 +461,14 @@ th {
   border-left: 4px solid var(--accent);
 }
 
+.deadline-notice {
+  margin-block: 50px 0;
+  padding: 22px 24px;
+  color: #5b4310;
+  background: #fff2c2;
+  border: 1px solid #e2ca72;
+}
+
 .footer-links {
   display: flex;
   gap: 30px;
@@ -415,16 +492,19 @@ th {
     padding-block: 60px;
   }
 
+  .quick-recommendation,
   .disclaimer {
     margin-top: 30px;
     padding: 28px 22px;
   }
 
   .contents ol,
+  .quick-spec-list,
   .factor,
   .recommendations,
   .link-grid,
-  .pros-cons {
+  .pros-cons,
+  .checklist-columns {
     grid-template-columns: 1fr;
   }
 
