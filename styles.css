@@ -194,10 +194,6 @@ main > .quick-recommendation {
   border: 1px solid #cadccf;
 }
 
-main > .disclaimer {
-  border-bottom: 1px solid #cadccf;
-}
-
 .disclaimer h2 {
   font-size: 2rem;
 }
