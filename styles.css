@@ -275,6 +275,112 @@ footer p {
   margin: 0;
 }
 
+.back-link {
+  display: inline-block;
+  margin-bottom: 45px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--surface);
+  font-size: 0.9rem;
+}
+
+th,
+td {
+  padding: 15px;
+  border: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background: var(--accent-light);
+}
+
+.option-heading {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.option-heading h2 {
+  margin-bottom: 0;
+}
+
+.price {
+  margin: 0;
+  color: var(--accent);
+  font-size: 1.8rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.option-summary {
+  max-width: 720px;
+  color: var(--muted);
+  font-size: 1.08rem;
+}
+
+.spec-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-block: 28px 36px;
+}
+
+.spec-strip span {
+  padding: 6px 11px;
+  background: var(--accent-light);
+  border-radius: 3px;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.pros-cons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.pros-cons ul {
+  margin: 0;
+  padding-left: 22px;
+}
+
+.pros-cons li {
+  margin-bottom: 10px;
+}
+
+.good-list li::marker {
+  color: var(--accent);
+}
+
+.bad-list li::marker {
+  color: #9b4638;
+}
+
+.verdict {
+  margin: 38px 0 0;
+  padding: 22px 24px;
+  background: var(--surface);
+  border-left: 4px solid var(--accent);
+}
+
+.footer-links {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+
 @media (max-width: 680px) {
   body {
     font-size: 16px;
@@ -299,11 +405,21 @@ footer p {
 
   .factor,
   .recommendations,
-  .link-grid {
+  .link-grid,
+  .pros-cons {
     grid-template-columns: 1fr;
   }
 
   .factor {
     gap: 14px;
+  }
+
+  .option-heading,
+  .footer-links {
+    flex-direction: column;
+  }
+
+  .option-heading {
+    gap: 15px;
   }
 }
